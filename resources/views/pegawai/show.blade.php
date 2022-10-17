@@ -16,10 +16,10 @@
             <div class="card">
                 <div class="card-header">
                     <div class="float-left">
-                        <span class="cardtitle"><h3>Lihat Datail Pegawai</h3></span>
+                        <span class="card-title"><h3>Lihat Datail Pegawai</h3></span>
                     </div>
                     <div class="float-right">
-                        <a class="btn btnprimary" href="{{ route('pegawai.index') }}"> Kembali</a>
+                        <a class="btn btn-primary" href="{{ route('pegawai.index') }}"> Kembali</a>
                     </div>
                 </div>
                 <table class="table table-sm">

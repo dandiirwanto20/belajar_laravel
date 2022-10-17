@@ -36,3 +36,27 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::resource('/mst-jabatan','MstJabatanController');
 
 Route::resource('/pegawai','PegawaiController');
+
+Route::get('/riwayat-pangkat','RiwayatPangkatController@index');
+
+Route::get('/riwayat-pangkat/proses/{id}','RiwayatPangkatController@proses')
+->name('riwayat-pangkat.index1');
+
+Route::get('/riwayat-pangkat/cetak/{id}','RiwayatPangkatController@cetak')
+->name('riwayat-pangkat.cetak');
+
+Route::get('/riwayat-pangkat/create/{id}','RiwayatPangkatController@create');
+Route::post('/riwayat-pangkat/store','RiwayatPangkatController@store')
+->name('riwayat-pangkat.store');
+
+Route::get('/riwayat-pangkat/{id}/edit','RiwayatPangkatController@edit')
+->name('riwayat-pangkat.edit');
+
+Route::patch('/riwayat-pangkat/update/{id}','RiwayatPangkatController@update')
+->name('riwayat-pangkat.update');
+
+Route::get('/riwayat-pangkat/show/{id}','RiwayatPangkatController@show')
+->name('riwayat-pangkat.show');
+
+Route::delete('/riwayat-pangkat/destroy/{id}','RiwayatPangkatController@destroy')
+->name('riwayat-pangkat.destroy');
